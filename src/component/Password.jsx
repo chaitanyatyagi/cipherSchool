@@ -16,7 +16,7 @@ export default function Password(props) {
             newpassword: npass,
             changepassword: cpass
         }
-        axios.patch("http://localhost:4800/user/password-change", payload).then((response) => {
+        axios.patch("https://cipherschoolsbackendexpress.onrender.com/user/password-change", payload).then((response) => {
             console.log(response)
             if (response.data.status == "fault") {
                 toast(response.data.message.toString())

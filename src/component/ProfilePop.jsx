@@ -15,7 +15,7 @@ export default function ProfilePop(props) {
         form.append('name', name)
         form.append('email', email)
         form.append('mobile', mobile)
-        axios.patch("http://localhost:4800/user/update-me", form).then((res) => {
+        axios.patch("https://cipherschoolsbackendexpress.onrender.com/user/update-me", form).then((res) => {
             console.log(res.data)
             if (res.data.status === "success") {
                 toast(res.data.message)

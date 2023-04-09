@@ -13,7 +13,7 @@ export default function ResetPassword() {
         const payload = {
             password: e.target[0].value
         }
-        axios.post(`http://localhost:4800/auth/reset-password/${name}`, payload).then((response) => {
+        axios.post(`https://cipherschoolsbackendexpress.onrender.com/auth/reset-password/${name}`, payload).then((response) => {
 
             if (response.data.status == "success") {
                 window.open("/", "_self")

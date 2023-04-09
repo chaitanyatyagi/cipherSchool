@@ -9,7 +9,7 @@ export default function Follow(props) {
     const [unfollow, setUnfollow] = useState(false)
     const [follow, setFollow] = useState(true)
     useEffect(() => {
-        axios.get("http://localhost:4800/user/get-followers").then((res) => {
+        axios.get("https://cipherschoolsbackendexpress.onrender.com/user/get-followers").then((res) => {
             setNum(res.data.followers)
         }).catch((err) => {
             console.log(err)

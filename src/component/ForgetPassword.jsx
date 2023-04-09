@@ -9,7 +9,7 @@ export default function ForgetPassword() {
         const payload = {
             email: e.target[0].value
         }
-        axios.post("http://localhost:4800/auth/forget-password", payload).then((response) => {
+        axios.post("https://cipherschoolsbackendexpress.onrender.com/auth/forget-password", payload).then((response) => {
             if (response.data.status == "success") {
                 toast(response.data.message)
                 window.open("/login", "_self")

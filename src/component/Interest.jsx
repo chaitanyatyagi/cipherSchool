@@ -32,7 +32,7 @@ export default function Interest(props) {
             _id: props.id,
             interests: interests
         }
-        axios.patch("http://localhost:4800/user/interests", payload).then((res) => {
+        axios.patch("https://cipherschoolsbackendexpress.onrender.com/user/interests", payload).then((res) => {
             if (res.data.status == "success") {
                 setInterests(res.data.updatedUser.interests)
                 toast(res.data.message)

@@ -14,7 +14,7 @@ export default function Login() {
             email: e.target[0].value,
             password: e.target[1].value
         }
-        axios.post("http://localhost:4800/auth/login", payload).then((response) => {
+        axios.post("https://cipherschoolsbackendexpress.onrender.com/auth/login", payload).then((response) => {
             if (response.data.status == "success") {
                 cookie.set('jwt', response.data.token, { path: '/' });
                 cookie.set('id', response.data.user._id, { path: '/' });

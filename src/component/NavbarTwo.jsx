@@ -8,8 +8,8 @@ export default function NavbarTwo(props) {
     const [profile, setProfile] = useState("")
     const [user, setUser] = useState("")
     useEffect(() => {
-        axios.post("http://localhost:4800/user/get-user", { _id: props.id }).then((r) => {
-            setProfile(`http://localhost:4800/public/user/${r.data.user[0].photo}`)
+        axios.post("https://cipherschoolsbackendexpress.onrender.com/user/get-user", { _id: props.id }).then((r) => {
+            setProfile(`https://cipherschoolsbackendexpress.onrender.com/public/user/${r.data.user[0].photo}`)
             setUser(r.data.user[0])
         })
     })

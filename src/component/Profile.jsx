@@ -21,7 +21,7 @@ export default function Profile(props) {
     const [user, setUser] = useState({})
 
     useEffect(() => {
-        axios.post("http://localhost:4800/user/get-user", { _id: props.id }).then((r) => {
+        axios.post("https://cipherschoolsbackendexpress.onrender.com/user/get-user", { _id: props.id }).then((r) => {
             setUser(r.data.user[0].interests)
         })
     })

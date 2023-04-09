@@ -5,7 +5,7 @@ import axios from "axios"
 
 export default function Card(props) {
     function handleSubmitTrue() {
-        axios.patch("http://localhost:4800/user/follow-user", { follower: props.el._id, user: props.id, chkr: true }).then((res) => {
+        axios.patch("https://cipherschoolsbackendexpress.onrender.com/user/follow-user", { follower: props.el._id, user: props.id, chkr: true }).then((res) => {
             console.log(res)
             if (res.data.status == "success") {
                 toast(res.data.message)
@@ -16,7 +16,7 @@ export default function Card(props) {
         })
     }
     function handleSubmitFalse() {
-        axios.patch("http://localhost:4800/user/follow-user", { follower: props.el._id, user: props.id, chkr: false }).then((res) => {
+        axios.patch("https://cipherschoolsbackendexpress.onrender.com/user/follow-user", { follower: props.el._id, user: props.id, chkr: false }).then((res) => {
             console.log(res)
             if (res.data.status == "success") {
                 toast(res.data.message)
