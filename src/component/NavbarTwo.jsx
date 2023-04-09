@@ -13,12 +13,13 @@ export default function NavbarTwo(props) {
             setUser(r.data.user[0])
         })
     })
+    console.log(user, profile)
 
     return (
         <div className="navbartwo">
             <div className="navbartwo-left">
                 {
-                    profile.length > 0 ? <img className="navbartwo-profile-icon" onClick={() => props.setProfilepop(true)} src={profile} /> : <Profile className="navbartwo-profile-icon" onClick={() => props.setProfilepop(true)} />
+                    profile ? <img className="navbartwo-profile-icon" onClick={() => props.setProfilepop(true)} src={profile} /> : <Profile className="navbartwo-profile-icon" onClick={() => props.setProfilepop(true)} />
                 }
                 <div className="navbartwo-left-name">
                     <div className="navbartwo-left-name1">Hello,</div>
@@ -27,7 +28,7 @@ export default function NavbarTwo(props) {
                 </div>
             </div>
             {
-                user && user.followers.length > 0 ? <Link to="/followers" className="navbartwo-right">{user.followers.length} Followers</Link> : ""
+                user && user.followers.length > 0 ? <Link to="/followers" className="navbartwo-right">{user.followers.length} Followers</Link> : <Link to="/followers" className="navbartwo-right">0 Followers</Link>
             }
         </div>
     )

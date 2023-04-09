@@ -33,8 +33,8 @@ function App() {
         <Routes>
           <Route path="/profile" element={<Profile login={login} id={id} />} />
           <Route path="/followers" element={<Follow id={id} login={login} />} />
-          <Route path="/" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Register />} />
           <Route path='/forget-password' element={<ForgetPassword />} />
           <Route path='/reset-password' element={<ResetPassword />} />
         </Routes>

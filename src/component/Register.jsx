@@ -16,7 +16,7 @@ export default function Register() {
         axios.post("http://localhost:4800/auth/register", payload).then((response) => {
             if (response.data.status == "success") {
                 toast(response.data.message)
-                window.open("/", "_self")
+                window.open("/login", "_self")
             }
             else if (response.data.status == "fault") {
                 toast(response.data.message.toString())
@@ -32,13 +32,13 @@ export default function Register() {
                 <div className="head">SignUp</div>
                 <label className="label">Name</label>
                 <input type="text" className="input" />
-                <label className="label">Mobile(Optional)</label>
+                <label className="label">Mobile</label>
                 <input type="text" className="input" />
                 <label className="label">Email</label>
                 <input type="email" className="input" />
                 <label className="label">Password</label>
                 <input type="password" className="input" />
-                <Link to="/" className="label">Already Registered?</Link>
+                <Link to="/login" className="label">Already Registered?</Link>
                 <div className="btn">
                     <button className="btnins">Register</button>
                 </div>

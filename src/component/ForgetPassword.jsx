@@ -12,7 +12,7 @@ export default function ForgetPassword() {
         axios.post("http://localhost:4800/auth/forget-password", payload).then((response) => {
             if (response.data.status == "success") {
                 toast(response.data.message)
-                window.open("/", "_self")
+                window.open("/login", "_self")
             }
             else if (response.data.status == "fault") {
                 toast(response.data.message.toString())
