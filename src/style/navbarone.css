@@ -1,0 +1,144 @@
+.navbarone {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #262c36;
+}
+
+.nabarone-combine-name-icon {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+}
+
+.navbarone-name {
+    width: 155px;
+    font-family: sans-serif !important;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navbarone-icon {
+    width: 40px;
+    height: 48px;
+    background-image: url("../image/icon.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.navbarone-right {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarone-right2 {
+    width: 82vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarone-searchbox {
+    width: 350px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbarone-searchbox2 {
+    width: 75vw;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbaroneiconicon {
+    width: 65%;
+    height: 65%;
+}
+
+.navbarone-searchicon {
+    width: 48px;
+    height: 100%;
+    border: 1px solid #15181e;
+    background-color: #15181e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 0px solid #D1D1D1;
+}
+
+.navbarone-searchinput {
+    width: 423px;
+    height: 93%;
+    color: white;
+    background-color: #15181e;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #15181e;
+    border-right: 0px solid #15181e;
+    outline: none;
+    font-family: sans-serif !important;
+    font-size: 14px;
+    font-weight: 700;
+    border-left: 0px solid #15181e;
+    font-weight: 300;
+}
+
+.navbarone-profile {
+    width: 30px;
+    height: 30px;
+    background-image: url("../image/profile.png");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.navbarone-notification {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbarone-searchicon-later {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+@media(max-width:750px) {
+    .navbarone-searchbox {
+        display: none;
+    }
+}
+
+@media(min-width:751px) {
+    .navbarone-searchicon-later {
+        display: none;
+    }
+}
+
+@media(max-width:400px) {
+    .navbarone-name {
+        display: none;
+    }
+
+    .nabarone-combine-name-icon {
+        width: 100px;
+    }
+}

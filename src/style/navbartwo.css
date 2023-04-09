@@ -1,0 +1,93 @@
+.navbartwo {
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #262c36;
+    background-image: url("../image/navbarBackground.png");
+    background-size: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbartwo-left {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbartwo-profile-icon {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.navbartwo-left-name {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.navbartwo-left-name1 {
+    width: 200px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbartwo-left-name2 {
+    width: 200px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbartwo-left-name3 {
+    width: 200px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.navbartwo-right {
+    width: 200px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:500px) {
+    .navbartwo-left-name {
+        display: none;
+    }
+
+    .navbartwo-left {
+        width: 80px;
+    }
+
+    .navbartwo-right {
+        width: 150px;
+    }
+}
+
+@media(max-width:750px) {
+    .navbartwo-profile-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

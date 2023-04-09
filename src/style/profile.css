@@ -1,0 +1,233 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #15181e;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+.border {
+    margin-top: 20px;
+    width: 85vw;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .1);
+}
+
+.profile-about {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-password {
+    width: 85vw;
+    /* height: 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-pi {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-about-input-collect-pi {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile-about-input-collect-pi-i {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+label {
+    width: 250px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-top: 3px;
+}
+
+.profile-interest {
+    width: 85vw;
+    /* height: 70px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-headbtn {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.profile-headbtn-head {
+    width: 250px;
+    text-align: left;
+    font-family: sans-serif !important;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.profile-headbtn-btn {
+    align-items: center;
+    background: #f3912e;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 28px;
+    justify-content: center;
+    line-height: 1;
+    width: 80px;
+}
+
+.profile-about-input {
+    margin-top: 10px;
+    width: 85vw;
+    height: 150px;
+    color: white;
+    background-color: #262c36;
+    border-radius: 8px;
+    outline: none;
+    font-family: sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 300;
+    border: 1px solid #262c36;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.profile-about-inputs {
+    margin-top: 10px;
+    height: 40px;
+    width: 42vw;
+    color: white;
+    background-color: #262c36;
+    border-radius: 8px;
+    outline: none;
+    font-family: sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 300;
+    border: 1px solid #262c36;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.profile-about-input-combine {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-about-input-left {
+    margin-top: 10px;
+    width: 3vw;
+    height: 38px;
+    background-color: #262c36;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid #262c36;
+    border-right: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-about-input-right {
+    margin-top: 10px;
+    width: 23vw;
+    height: 40px;
+    color: white;
+    background-color: #262c36;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    font-family: sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 300;
+    border: 1px solid #262c36;
+    box-sizing: border-box;
+    border-left: 0px solid white;
+}
+
+.profile-interest-add {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.int-btns {
+    margin-left: 6px;
+    margin-top: 7px;
+    align-items: center;
+    background: #f3912e;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    width: 140px;
+}
+
+option:checked {
+    background-color: #f3912e;
+}
+
+.profile-about-input::-webkit-scrollbar {
+    display: none;
+}
+
+@media(max-width:883px) {
+    .profile-about-input-right {
+        width: 39vw;
+    }
+}
+
+@media(max-width:588px) {
+    .profile-about-inputs {
+        width: 85vw;
+    }
+
+    .profile-about-input-right {
+        width: 82vw;
+    }
+}

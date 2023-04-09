@@ -1,0 +1,11 @@
+.follow-ins {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #15181e;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: auto;
+}
